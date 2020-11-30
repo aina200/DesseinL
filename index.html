@@ -101,22 +101,27 @@
 <form id="homePageForm">
   <div class="homeForm">
     <label>Nom</label>
-    <input type="text"placeholder="Nom">
+    <input class="nameInput" type="text"placeholder="Nom" required>
+    <span id='lastNameError'></span>
   </div>
  
   <div class="homeForm">
     <label>Email</label>
-    <input type="email"placeholder="name@example.com">
+    <input class="emailInput" type="email"placeholder="name@example.com" required>
+    <span id='emailError'></span>
   </div>
 
    <div class="homeForm">
     <label>Tel:</label>
-    <input type="tel"placeholder="+33">
+    <input  class="phoneInput" type="tel"placeholder="+33" required>
+    <span id='phoneError'></span>
   </div>
 
   <div class="homeForm">
     <label>Message</label>
-   <textarea></textarea>
+   <textarea class="textareaInput" required></textarea>
+   <span id='textareaError'></span>
+
   </div>
 
   <button id="homePageFormButton">Envoyer</button>
