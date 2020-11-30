@@ -149,20 +149,6 @@ function validation (e)
         phoneError.style.color = 'green';
     }
 
-
-    //***********************************LENGTH VALIDATION*****************
-    else if (lastName.value.length <=2 ) 
-    {
-        lastNameError.textContent = "*Veuillez entrer plus de deux caractères*";
-        lastNameError.style.color = 'red';
-    }
-
-    else if (email.value.length <10 ) {
-
-        emailError.textContent = '*Veuillez entrer plus de caractères*';
-        emailError.style.color = 'red';
-    }
-
     // else
     // {
     //     alert('Merci! Je revienderai vers vous dans les meilleurs delais!');

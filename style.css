@@ -114,6 +114,7 @@ nav ul
 {
 	margin-top: 10px;
 	margin-left: 50px;
+	color: black;
 }
 /********************************************PROJECTS SECTION*******************************/
 
@@ -276,12 +277,14 @@ nav ul
 	margin-top: 80px;
 	position: relative;
 	transition: all 1s ease-in-out;
+	background-image: url(img/Vector_4.svg);
+	overflow: visible;
 }
 .aboutText
 {
 	width: 400px;
 }
-@keyframes slideElement
+/*@keyframes slideElement
 {
   from
   {
@@ -297,7 +300,7 @@ nav ul
   animation:2.5s slideElement alternate;
   animation-fill-mode: forwards;
 }
-
+*/
 
 /********************************************FORM SECTION*******************************/
 
