@@ -19,14 +19,14 @@
 
 //*****************************NAVBAR***************************************
 
-// let toggle = document.querySelector('.toggle'),
-//     button = document.querySelector('.btn_menu'),
-//     nav = document.querySelector('nav');
+let toggle = document.querySelector('.toggle'),
+    button = document.querySelector('.btn_menu'),
+    nav = document.querySelector('nav');
 
-// button.addEventListener('click', () => {
-//   toggle.classList.toggle('active-toggle');
-//   nav.classList.toggle('openNav');
-// });
+button.addEventListener('click', () => {
+  toggle.classList.toggle('active-toggle');
+  nav.classList.toggle('openNav');
+});
 
 //*****************************ABOUT SECTION ***************************************
 
@@ -48,12 +48,13 @@ window.addEventListener('scroll', ()=>{
 
 
 //*****************************FORM SECTION ***************************************
-// const formBorder = document.querySelector('.formAnimation'); 
 
-//     formBorder.addEventListener('click', ()=>{  
+const formBorder = document.querySelector('.formAnimation'); 
 
-// 		formBorder.classList.add('formAnimationsJSCalss');
-// });
+    formBorder.addEventListener('click', ()=>{  
+
+		formBorder.classList.add('formAnimationsJSCalss');
+});
 
 
 

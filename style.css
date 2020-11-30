@@ -24,7 +24,7 @@
   width: 50px;
   height: 20px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
 }
 .toggle
 {
@@ -73,7 +73,7 @@
 nav{
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 2;
   background: white;
   display: block;
   top: 0;
@@ -82,6 +82,7 @@ nav{
   opacity: 0;
   transition: all 1s ease;
   font-size: 1.3em;
+  display: block;
 }
 nav a
 {
@@ -102,7 +103,8 @@ nav ul
 
 }
 
-.openNav{
+.openNav
+{
   display: block;
   opacity: 1;
 }
@@ -147,6 +149,7 @@ nav ul
 	overflow: hidden;
 	margin-left: 10px;
 	margin-top: 0px;
+
 }
 .borderAnimation:nth-child(4n)
 {
@@ -163,6 +166,7 @@ nav ul
   margin: 100px auto;
   padding-top: 6px;
   cursor: pointer;
+  z-index: 7;
 }
 
 
@@ -277,7 +281,6 @@ nav ul
 	margin-top: 80px;
 	position: relative;
 	transition: all 1s ease-in-out;
-	background-image: url(img/Vector_4.svg);
 	overflow: visible;
 }
 .aboutText
