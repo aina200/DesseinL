@@ -15,7 +15,7 @@
 <div class="progressBarLecture"></div>
 <!-- *************************************NAVBAR*************************************** -->
 
-<nav>
+<!-- <nav>
   <ul>
     <li><a href="#">Acceuil</a></li>
     <li><a href="#">Projets</a></li>
@@ -25,7 +25,7 @@
 </nav>
 <div class="btn_menu">
   <span class='toggle'></span>
-</div>
+</div> -->
 
 <!-- *************************************HOME PAGE*************************************** -->
 
@@ -98,34 +98,32 @@
 
 <form id="homePageForm">
   <div class="homeForm">
-    <label>Nom</label>
-    <input class="nameInput" type="text"placeholder="Nom" required>
+
+    <label class="formLabel">Nom</label>
+    <input class="nameInput" type="text" required>
     <span id='lastNameError'></span>
   </div>
  
   <div class="homeForm">
-    <label>Email</label>
-    <input class="emailInput" type="email"placeholder="name@example.com" required>
+    <label class="formLabel">Email</label>
+    <input class="emailInput" type="email" required>
     <span id='emailError'></span>
   </div>
 
    <div class="homeForm">
-    <label>Tel:</label>
-    <input  class="phoneInput" type="tel"placeholder="+33" required>
+    <label class="formLabel">Tel:</label>
+    <input  class="phoneInput" type="tel" required>
     <span id='phoneError'></span>
   </div>
 
   <div class="homeForm">
-    <label>Message</label>
+    <label class="formLabel">Message</label>
    <textarea class="textareaInput" required></textarea>
    <span id='textareaError'></span>
-
   </div>
 
   <button id="homePageFormButton">Envoyer</button>
 </form>
-
-
 
 
 
@@ -135,9 +133,6 @@
 <div class="arrowUp">
   <i id="arrowIcon"class="fas fa-angle-up"></i>
 </div>
-
-
-
 
 
 

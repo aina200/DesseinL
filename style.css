@@ -12,7 +12,7 @@
   width: 0%;
   height: 6px;
   background-color: #4F3126;
-  z-index: 1;
+  z-index: 4;
 }
 /********************************************NAVBAR*******************************/
 .btn_menu
@@ -24,7 +24,7 @@
   width: 50px;
   height: 20px;
   cursor: pointer;
-  z-index: 2;
+  z-index: 5;
 }
 .toggle
 {
@@ -166,7 +166,7 @@ nav ul
   margin: 100px auto;
   padding-top: 6px;
   cursor: pointer;
-  z-index: 7;
+  z-index: 3;
 }
 
 
@@ -314,12 +314,18 @@ nav ul
 	margin-left: 100px;
 
 }
+.homeForm
+{
+	margin-bottom: 35px;
+}
 .homeForm input
 {
 	display: flex;
     flex-direction: column;
 	width: 700px;
 	height: 40px;
+	border:transparent;
+	border-bottom: 1px solid black;
 }
 .homeForm textarea
 {
@@ -327,6 +333,8 @@ nav ul
     flex-direction: column;
 	width: 700px;
 	height: 300px;
+	border:transparent;
+	border-bottom: 1px solid black;
 }
 #homePageFormButton
 {
@@ -334,12 +342,30 @@ nav ul
 	width: 700px;
 	height: 40px;
 	border-radius: 20px;
+	border:1px solid black;
+	background-color: white;
 }
-
+#homePageFormButton:hover
+{
+	background-color: #E9CC9A;
+	border:1px #E9CC9A solid;
+	color: white;
+}
 
 /********************************************FORM ANIMATION*******************************/
 
-
+.formLabel
+{
+	position: absolute;
+	margin-top: 20px;
+	transform: translateY(-50%);
+    transition: all 0.3s ease-out;
+}
+ .homeForm:focus-within .formLabel,
+ .homeForm.activeInput .formLabel
+ {
+ 	margin-top:-20px;
+ }
 
 /********************************************ARROW UP*******************************/
 .arrowUp
@@ -358,14 +384,5 @@ nav ul
   bottom: 20px;
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
 
 

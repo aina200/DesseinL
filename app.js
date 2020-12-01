@@ -19,45 +19,53 @@
 
 //*****************************NAVBAR***************************************
 
-let toggle = document.querySelector('.toggle'),
-    button = document.querySelector('.btn_menu'),
-    nav = document.querySelector('nav');
+// let toggle = document.querySelector('.toggle'),
+//     button = document.querySelector('.btn_menu'),
+//     nav = document.querySelector('nav');
 
-button.addEventListener('click', () => {
-  toggle.classList.toggle('active-toggle');
-  nav.classList.toggle('openNav');
-});
+// button.addEventListener('click', () => {
+//   toggle.classList.toggle('active-toggle');
+//   nav.classList.toggle('openNav');
+// });
 
 //*****************************ABOUT SECTION ***************************************
 
-const slide = document.querySelector('.aboutSection'); 
+// const slide = document.querySelector('.aboutSection'); 
 
 
-window.addEventListener('scroll', ()=>{  
+// window.addEventListener('scroll', ()=>{  
 
 
-	if(window.scrollY>2100)
-	{ 
-		slide.classList.add('aboutAnimation');
-	}
-	else
-	{
-		slide.classList.remove('aboutAnimation');
-	}
+// 	if(window.scrollY>2100)
+// 	{ 
+// 		slide.classList.add('aboutAnimation');
+// 	}
+// 	else
+// 	{
+// 		slide.classList.remove('aboutAnimation');
+// 	}
+// });
+
+
+//*****************************FORM ANIMATION ***************************************
+
+const homeForm = document.querySelector('.homeForm');
+const input = document.querySelectorAll('.formLabel');
+
+
+document.addEventListener('input', function(e) 
+{
+    
+    if(e.target.value !== "")
+    {
+        e.target.parentNode.classList.add('activeInput');
+    } 
+    else if (e.target.value === "")
+    {
+        e.target.parentNode.classList.remove('activeInput');
+    }
+
 });
-
-
-//*****************************FORM SECTION ***************************************
-
-const formBorder = document.querySelector('.formAnimation'); 
-
-    formBorder.addEventListener('click', ()=>{  
-
-		formBorder.classList.add('formAnimationsJSCalss');
-});
-
-
-
 //*****************************FORM VALIDATION ***************************************
 
 let formButton = document.getElementById('homePageFormButton');
