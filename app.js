@@ -19,32 +19,33 @@
 
 //*****************************NAVBAR***************************************
 
-// let toggle = document.querySelector('.toggle'),
-//     button = document.querySelector('.btn_menu'),
-//     nav = document.querySelector('nav');
+let toggle = document.querySelector('.toggle'),
+    button = document.querySelector('.btn_menu'),
+    nav = document.querySelector('nav');
 
-// button.addEventListener('click', () => {
-//   toggle.classList.toggle('active-toggle');
-//   nav.classList.toggle('openNav');
-// });
+button.addEventListener('click', () => 
+{
+  toggle.classList.toggle('active-toggle');
+  nav.classList.toggle('openNav');
+});
 
 //*****************************ABOUT SECTION ***************************************
 
-// const slide = document.querySelector('.aboutSection'); 
+const slide = document.querySelector('.aboutSection'); 
 
 
-// window.addEventListener('scroll', ()=>{  
+window.addEventListener('scroll', ()=>{  
 
 
-// 	if(window.scrollY>2100)
-// 	{ 
-// 		slide.classList.add('aboutAnimation');
-// 	}
-// 	else
-// 	{
-// 		slide.classList.remove('aboutAnimation');
-// 	}
-// });
+	if(window.scrollY>2100)
+	{ 
+		slide.classList.add('aboutAnimation');
+	}
+	else
+	{
+		slide.classList.remove('aboutAnimation');
+	}
+});
 
 
 //*****************************FORM ANIMATION ***************************************
@@ -165,12 +166,6 @@ function validation (e)
 
     
 }
-
-
-
-
-
-
 
 
 //*****************************ARROW UP ***************************************
