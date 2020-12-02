@@ -64,27 +64,27 @@ document.addEventListener('input', function(e) {
 });
 //*****************************FORM VALIDATION ***************************************
 
-let formButton = document.getElementById('homePageFormButton');
+let formButton = document.querySelector('.homePageFormButton');
 
 let lastName = document.querySelector('.nameInput');
-let lastNameError = document.getElementById('lastNameError');
+let lastNameError = document.querySelector('.lastNameError');
 let regexName = /^([a-zA-Z ]+)$/;
 
 
 let email = document.querySelector('.emailInput');
-let emailError = document.getElementById('emailError');
+let emailError = document.querySelector('.emailError');
 let regexEmail = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 
 let phone = document.querySelector('.phoneInput');
-let phoneError = document.getElementById('phoneError');
+let phoneError = document.querySelector('.phoneError');
 let regexPhone =  /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/;
 
 
 let textarea = document.querySelector('.textareaInput');
-let textareaError = document.getElementById('textareaError');
+let textareaError = document.querySelector('.textareaError');
 
-let formValid = document.querySelector('.ifFormIsValid');
+// let formValid = document.querySelector('.ifFormIsValid');
 
 formButton.addEventListener('click',validation);
 
@@ -136,7 +136,6 @@ function validation (e)
     }
 
 }
-
 
 //*****************************ARROW UP ***************************************
 

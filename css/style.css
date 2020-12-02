@@ -309,7 +309,7 @@ nav ul
 
 /********************************************FORM SECTION*******************************/
 
-#homePageForm
+.homePageForm
 {
 	margin-top: 200px;
 	margin-bottom: 200px;
@@ -340,7 +340,8 @@ nav ul
 	border:transparent;
 	border-bottom: 1px solid black;
 }
-#homePageFormButton
+
+.homePageFormButton
 {
 	margin-top: 50px;
 	width: 700px;
@@ -349,12 +350,15 @@ nav ul
 	border:1px solid black;
 	background-color: white;
 }
-#homePageFormButton:hover
+.homePageFormButton:hover
 {
 	background-color: #E9CC9A;
 	border:1px #E9CC9A solid;
 	color: white;
 }
+
+
+
 /*.ifFormIsValid
 {
 	width: 700px;
@@ -425,4 +429,14 @@ nav ul
   position: fixed;
   width: 500px;
   margin-left: 80px;
+}
+
+/**************************!!CONTACT PAGE!!*******************************/
+.contactForm
+{
+  padding-top: 200px;
+  margin-bottom: 200px;
+  margin-left: 300px;
+  z-index: 2;
+  position: relative;
 }
