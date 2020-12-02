@@ -6,8 +6,7 @@
 
  window.addEventListener('scroll',lectureProgress);
 
- function lectureProgress(e)
- {
+ function lectureProgress(e) {
 
     //on recupere la taille de scroll et la taille de la fenetre 
     let windowScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -16,15 +15,16 @@
 
     progressBar.style.width = percent + '%';
  }
+ // import lectureProgress from 'layout.js';
 
 //*****************************NAVBAR***************************************
 
-let toggle = document.querySelector('.toggle'),
-    button = document.querySelector('.btn_menu'),
-    nav = document.querySelector('nav');
+let toggle = document.querySelector('.toggle');
+let button = document.querySelector('.btn_menu');
+let nav = document.querySelector('nav');
 
-button.addEventListener('click', () => 
-{
+button.addEventListener('click', () => {
+
   toggle.classList.toggle('active-toggle');
   nav.classList.toggle('openNav');
 });
@@ -34,15 +34,13 @@ button.addEventListener('click', () =>
 const slide = document.querySelector('.aboutSection'); 
 
 
-window.addEventListener('scroll', ()=>{  
+window.addEventListener('scroll', ()=> {  
 
 
-	if(window.scrollY>2100)
-	{ 
+	if(window.scrollY>2100) { 
 		slide.classList.add('aboutAnimation');
 	}
-	else
-	{
+	else {
 		slide.classList.remove('aboutAnimation');
 	}
 });
@@ -54,15 +52,12 @@ const homeForm = document.querySelector('.homeForm');
 const input = document.querySelectorAll('.formLabel');
 
 
-document.addEventListener('input', function(e) 
-{
+document.addEventListener('input', function(e) {
     
-    if(e.target.value !== "")
-    {
+    if(e.target.value !== "") {
         e.target.parentNode.classList.add('activeInput');
     } 
-    else if (e.target.value === "")
-    {
+    else if (e.target.value === "") {
         e.target.parentNode.classList.remove('activeInput');
     }
 
@@ -89,7 +84,7 @@ let regexPhone =  /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/;
 let textarea = document.querySelector('.textareaInput');
 let textareaError = document.getElementById('textareaError');
 
-
+let formValid = document.querySelector('.ifFormIsValid');
 
 formButton.addEventListener('click',validation);
 
@@ -116,55 +111,30 @@ function validation (e)
     
     //***********************************CARACTERES VALIDATION*****************
 
-    else if (regexName.test(lastName.value) === false) 
-    {
+    if (regexName.test(lastName.value) === false) {
         event.preventDefault();
 
         lastNameError.textContent = '*Nom Ivalide*';
         lastNameError.style.color = 'red';
     }
-    else if (regexName.test(lastName.value) === true) 
-    {
-        event.preventDefault();
-
-        lastNameError.textContent = 'Nom valide';
-        lastNameError.style.color = 'green';
-    }
-    if (regexEmail.test(email.value) === false) 
-    {
+    if (regexEmail.test(email.value) === false) {
         event.preventDefault();
 
         emailError.textContent = 'Email invalide';
         emailError.style.color = 'red';
     }
-    else if (regexEmail.test(email.value) === true) 
-    {
-        event.preventDefault();
-
-        emailError.textContent = 'Email valide';
-        emailError.style.color = 'green';
-    }
-     if (regexPhone.test(phone.value) === false) 
-    {
+    if (regexPhone.test(phone.value) === false) {
         event.preventDefault();
 
         phoneError.textContent = 'Numéro invalide';
         phoneError.style.color = 'red';
     }
-    else if (regexPhone.test(phone.value) === true) 
+    else
     {
-        event.preventDefault();
-
-        phoneError.textContent = 'Numéro valide';
-        phoneError.style.color = 'green';
+    	alert("Merci!J'ai bien reçu votre message")
+        // formValid.style.backgroundColor = "red";
     }
 
-    // else
-    // {
-    //     alert('Merci! Je revienderai vers vous dans les meilleurs delais!');
-    // }
-
-    
 }
 
 

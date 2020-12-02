@@ -69,7 +69,6 @@
   transform: rotate(-40deg);
   background-color:black;
 }
-
 nav
 {
   width: 100%;
@@ -77,11 +76,11 @@ nav
   z-index: 3;
   background: white;
   display: none;
-  top: 0;
-  left: 0;
+  /*top: 0;
+  left: 0;*/
   position:fixed;
   opacity: 0;
-  transition: all 1s ease-in-out;
+  transition: all 1s ease;
   font-size: 1.3em;
 }
 nav a
@@ -356,6 +355,16 @@ nav ul
 	border:1px #E9CC9A solid;
 	color: white;
 }
+/*.ifFormIsValid
+{
+	width: 700px;
+	height: 200px;
+	background-color: pink;
+	margin-left: 23%;
+	margin-bottom: 500px;
+	/*position: fixed;*/
+/*	display: block;
+}/*/
 
 /********************************************FORM ANIMATION*******************************/
 
@@ -391,3 +400,30 @@ nav ul
 }
 
 
+/**************************!!PROJECTS PAGE!!*******************************/
+.projectsBody
+{
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 300px;
+}
+.projectsImg
+{
+	grid-column: 2/2;
+	
+}
+.projectsImg img
+{
+	width: 500px;
+	height: 400px!important;
+	margin-bottom: 100px;
+}
+.projectsText
+{
+	/*background-color: lime;*/
+	grid-column: 1/2;
+	position: fixed;
+	width: 500px;
+	margin-left: 80px;
+}
