@@ -3,7 +3,9 @@
 $pages = [
     'homepage' => './views/homepage.phtml',
     'projectsPage' => 'views/projectsPage.phtml',
+    'about' => 'views/about.phtml',
     'contact' => 'views/contact.phtml',
+
     
 ];
 
