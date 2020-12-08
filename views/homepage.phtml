@@ -67,33 +67,33 @@
 </div>
 <!-- ************************************FORM SECTION********************************** -->
 
-<form  class="homePageForm">
+<form method="POST"  class="homePageForm">
   <div class="homeForm">
 
     <label class="formLabel">Nom</label>
-    <input class="nameInput" type="text" required>
+    <input name="name"  class="nameInput" type="text" required>
     <span class='lastNameError'></span>
   </div>
  
   <div class="homeForm">
     <label class="formLabel">Email</label>
-    <input class="emailInput" type="email" required>
+    <input name="email" class="emailInput" type="email" required>
     <span class='emailError'></span>
   </div>
 
    <div class="homeForm">
     <label class="formLabel">Tel:</label>
-    <input  class="phoneInput" type="tel" required>
+    <input  name="phone" class="phoneInput" type="tel" required>
     <span class='phoneError'></span>
   </div>
 
   <div class="homeForm">
     <label class="formLabel">Message</label>
-   <textarea class="textareaInput" required></textarea>
+   <textarea name="message" type="text" class="textareaInput" required></textarea>
    <span class='textareaError'></span>
   </div>
 
-  <button class="homePageFormButton">Envoyer</button>
+  <button type="submit"  class="homePageFormButton">Envoyer</button>
 </form>
 
 <!-- ******************************TEXT-CARD************************* -->
