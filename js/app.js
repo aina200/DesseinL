@@ -109,5 +109,4 @@ function validation (e)
 
 }
 
-"use strict"
 
