@@ -83,11 +83,11 @@ nav
 }
 nav a
 {
-	color: rgba(0, 0, 0, 1);
+  color: rgba(0, 0, 0, 1);
 }
 nav a:hover
 {
-	color: rgba(0, 0, 0, 1);
+  color: rgba(0, 0, 0, 1);
 }
 nav ul
 {
@@ -107,44 +107,44 @@ nav ul
 
 .card-img-overlay
 {
-	margin-top: 10px;
-	margin-left: 50px;
-	color: rgba(0, 0, 0, 1);
+  margin-top: 10px;
+  margin-left: 50px;
+  color: rgba(0, 0, 0, 1);
 }
 /**************************PROJECTS SECTION***********************/
 .projects
 {
-	padding-top: 100px;
-	display: grid;
+  padding-top: 100px;
+  display: grid;
   grid-template-columns: auto auto ;
   grid-gap: 10px;
   padding: 10px;
-	justify-content: space-around;
+  justify-content: space-around;
 }
 .project
 {
-	margin-top: 100px;
+  margin-top: 100px;
 }
 .projects p
 {
-	text-align: center;
-	width: 300px;
+  text-align: center;
+  width: 300px;
 }
 .imgProject
 {
-	width: 330px;
-	height: 380px;
-	grid-column: 2/2;
-	margin-top: 100px;
-	cursor: pointer;
-	overflow: hidden;
-	margin-left: 10px;
-	margin-top: 0px;
+  width: 330px;
+  height: 380px;
+  grid-column: 2/2;
+  margin-top: 100px;
+  cursor: pointer;
+  overflow: hidden;
+  margin-left: 10px;
+  margin-top: 0px;
 }
 .borderAnimation:nth-child(4n)
 {
-	grid-column: 1/2;
-	grid-row:2/3;
+  grid-column: 1/2;
+  grid-row:2/3;
 }
 /*******************************PROJECT BORDER ANIMATION*******************************/
 .borderAnimation
@@ -193,83 +193,83 @@ nav ul
 {
   0%
   {
-  	border-left-width: 2px;
-  	border-top-width: 2px;
-  	
-  	width: 0;
-  	height: 100%;
+    border-left-width: 2px;
+    border-top-width: 2px;
+    
+    width: 0;
+    height: 100%;
   }
   50%
   {
-  	width: 100%;
-  	height: 100%;
+    width: 100%;
+    height: 100%;
   }
   100%
   {
-  	border-left-width: 2px;
-  	border-top-width: 2px;
+    border-left-width: 2px;
+    border-top-width: 2px;
   }
 }
 /*@keyframes topLeft
 {
   0%
   {
-  	border-top-width: 1px;
-  	border-left-width: 1px;
-  	width: 0;
-  	height: 0;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    width: 0;
+    height: 0;
   }
   50%
   {
-  	width: 100%;
-  	height: 0;
+    width: 100%;
+    height: 0;
   }
   100%
   {
-  	height: 100%;
-  	border-top-width: 1px;
-  	border-left-width: 1px;
+    height: 100%;
+    border-top-width: 1px;
+    border-left-width: 1px;
   }
 }*/
 @keyframes bottomRight
 {
   0%
   {
-  	border-bottom-width: 2px;
-  	border-right-width: 2px;
-  	width: 0;
-  	height: 0;
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+    width: 0;
+    height: 0;
   }
   50%
   {
-  	width: 100%;
-  	height: 0;
+    width: 100%;
+    height: 0;
   }
   100%
   {
-  	height: 100%;
-  	border-bottom-width: 2px;
-  	border-right-width: 2px;
+    height: 100%;
+    border-bottom-width: 2px;
+    border-right-width: 2px;
   }
 }
 
 /****************ABOUT SECTION*******************************/
 .aboutTitle
 {
-	margin-top: 100px;
+  margin-top: 100px;
 }
 .aboutSection
 {
-	display: flex;
-	justify-content: space-around;
-	margin-top: 80px;
-	position: relative;
-	transition: all 1s ease-in-out;
-	overflow: visible;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+  position: relative;
+  transition: all 1s ease-in-out;
+  overflow: visible;
 }
 .aboutText
 {
-	width: 400px;
+  width: 400px;
 }
 /*@keyframes slideElement
 {
@@ -292,74 +292,74 @@ nav ul
 /*****************************FORM SECTION*******************************/
 .homePageForm
 {
-	margin-top: 200px;
-	margin-bottom: 200px;
-	margin-left: 100px;
-	z-index: 2;
-	position: relative;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  margin-left: 100px;
+  z-index: 2;
+  position: relative;
 }
 .homeForm
 {
-	margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 .homeForm input
 {
-	display: flex;
+  display: flex;
   flex-direction:column;
-	width: 700px;
-	height: 40px;
-	border:transparent;
-	border-bottom: 1px solid rgba(0, 0, 0, 1);
+  width: 700px;
+  height: 40px;
+  border:transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
 .homeForm textarea
 {
-	display: flex;
+  display: flex;
   flex-direction: column;
-	width: 700px;
-	height: 300px;
-	border:transparent;
-	border-bottom: 1px solid rgba(0, 0, 0, 1);
+  width: 700px;
+  height: 300px;
+  border:transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
 
 .homePageFormButton
 {
-	margin-top: 50px;
-	width: 700px;
-	height: 40px;
-	border-radius: 20px;
-	border:1px solid rgba(0, 0, 0, 1);
-	background-color: rgba(255, 255, 255, 1);
+  margin-top: 50px;
+  width: 700px;
+  height: 40px;
+  border-radius: 20px;
+  border:1px solid rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 1);
 }
 .homePageFormButton:hover
 {
-	background-color: #d7b94b;
-	border:1px rgba(0, 0, 0, 1) solid;
-	color: rgba(0, 0, 0, 1);
+  background-color: #d7b94b;
+  border:1px rgba(0, 0, 0, 1) solid;
+  color: rgba(0, 0, 0, 1);
 }
 /*.ifFormIsValid
 {
-	width: 700px;
-	height: 200px;
-	background-color: pink;
-	margin-left: 23%;
-	margin-bottom: 500px;
-	/*position: fixed;*/
-/*	display: block;
+  width: 700px;
+  height: 200px;
+  background-color: pink;
+  margin-left: 23%;
+  margin-bottom: 500px;
+  /*position: fixed;*/
+/*  display: block;
 }/*/
 
 /***************************FORM ANIMATION*******************************/
 
 .formLabel
 {
-	position: absolute;
-	margin-top: 20px;
-	transform: translateY(-50%);
+  position: absolute;
+  margin-top: 20px;
+  transform: translateY(-50%);
     transition: all 0.3s ease-out;
 }
  .homeForm:focus-within .formLabel,
  .homeForm.activeInput .formLabel
  {
- 	margin-top:-20px;
+  margin-top:-20px;
  }
 
 /******************************ARROW UP*******************************/
@@ -433,4 +433,103 @@ nav ul
 #aboutTitle
 {
   padding-top:250px;
+}
+
+/**************************MEDIA QUERYS*******************************/
+
+
+/****************************HOMEPAGE********************************/
+
+@media screen and (max-width: 600px)/*phones*/
+{
+/*************************LOYAOUT SECTION************************/
+  html,body
+  {
+    overflow-x: hidden;
+  }
+  body
+  {
+    max-width: 600px!important;
+    text-align: center;
+  }
+  .card-img-overlay
+  {
+    font-size: 0.8em;
+    margin-left: -100px;
+    width: 100%;
+  }
+  #homePage
+  {
+    height: 800px;
+  }
+  .btn_menu
+  {
+    width: 40px;
+  }
+  .arrowUp
+  {
+    width: 35px;
+    height: 35px;
+  }
+  /************************PROJECTS SECTION************************/
+  .projects
+  {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .project
+  {
+    font-size: 1em;
+    margin-left: 20px;
+  }
+  .borderAnimation:nth-child(4n)
+  {
+    grid-row:4/6;
+  }
+  .containerProject
+  {
+    margin-top: -100px;
+  }
+  /*************************ABOUT SECTION************************/
+  .aboutSection
+  {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-size: 1em;
+  }
+  .aboutText
+  {
+    width: 350px;
+    margin-left: 10px;
+  }
+  /*************************FORM SECTION************************/
+  .homeForm
+  {
+    margin-left: -60px;
+  }
+  .homeForm input
+  {
+    width: 300px;
+  }
+   .homeForm textarea
+  {
+    width: 300px;
+    height: 200px
+  }
+  .homePageFormButton
+  {
+    width: 300px;
+    margin-left: -75px;
+    margin-top: 0px;
+  }
+  .formLabel
+  {
+    margin-left: -150px;
+  }
+  
+  /**************************!PROJECTS PAGE!*****************************/
+  
+  .card-img-top
 }
