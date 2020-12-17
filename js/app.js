@@ -36,7 +36,7 @@ document.addEventListener('input', function(e) {
 });
 //*****************************FORM VALIDATION ***************************************
 
-let formButton = document.querySelector('.homePageFormButton');
+let formButton = document.querySelector('.submitButton');
 
 let lastName = document.querySelector('.nameInput');
 let lastNameError = document.querySelector('.lastNameError');
@@ -56,7 +56,6 @@ let regexPhone =  /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/;
 let textarea = document.querySelector('.textareaInput');
 let textareaError = document.querySelector('.textareaError');
 
-// let formValid = document.querySelector('.ifFormIsValid');
 
 formButton.addEventListener('click',validation);
 
@@ -100,11 +99,6 @@ function validation (e)
 
         phoneError.textContent = 'Numéro invalide';
         phoneError.style.color = 'red';
-    }
-    else
-    {
-    	alert("Merci!J'ai bien reçu votre message")
-        // formValid.style.backgroundColor = "red";
     }
 
 }

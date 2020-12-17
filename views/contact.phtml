@@ -2,33 +2,33 @@
 
 <!-- ******************************FORM************************* -->
 
-<form  class="contactForm">
-  <div class="homeForm">
+<form  method="POST" class="contactForm" action="index.php?page=cible">
+  <div class="forms">
 
     <label class="formLabel">Nom</label>
     <input class="nameInput" type="text" required>
     <span class='lastNameError'></span>
   </div>
  
-  <div class="homeForm">
+  <div class="forms">
     <label class="formLabel">Email</label>
     <input class="emailInput" type="email" required>
     <span class='emailError'></span>
   </div>
 
-   <div class="homeForm">
+   <div class="forms">
     <label class="formLabel">Tel:</label>
     <input  class="phoneInput" type="tel" required>
     <span class='phoneError'></span>
   </div>
 
-  <div class="homeForm">
+  <div class="forms">
     <label class="formLabel">Message</label>
-   <textarea class="textareaInput" required></textarea>
+   <textarea class="textareaInput" type="text" required></textarea>
    <span class='textareaError'></span>
   </div>
 
-  <button class="homePageFormButton">Envoyer</button>
+  <button type="submit" class="submitButton">Envoyer</button>
 </form>
 <!-- ******************************TEXT-CARD************************* -->
 

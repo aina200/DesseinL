@@ -1,13 +1,12 @@
 <?php
 
 $pages = [
-    // 'homepage' => './views/homepage.phtml',
     'homepage' => './controllers/homepage_controller.php',
     'projectsPage' => 'views/projectsPage.phtml',
     'about' => 'views/about.phtml',
     'contact' => 'views/contact.phtml',
-
-    
+    'cible' => 'views/cible.phtml',
+    'cookie' => 'models/accept_cookie.php',
 ];
 
 $page = $pages['homepage'];

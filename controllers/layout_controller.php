@@ -2,10 +2,14 @@
 
 declare(strict_types=1);
 
-// require_once './models/CategoriesManager.php';
-// require_once './models/Category.php';
+	
+	if (isset($_COOKIE['accept_cookie'])) {
 
-// $categoriesManager = new CategoriesManager;
-// $categories = $categoriesManager->fetchAll($pdo);
+    	$showcookie = false;
+	}
+	else
+	{
+    	$showcookie = true;
+	}		
 
 require './views/layout.phtml';
