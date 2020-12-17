@@ -3,7 +3,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Arial Nova Light;
 }
 .progressBarLecture
 {
@@ -112,19 +111,15 @@ nav ul
   margin-left: 50px;
   color: rgba(0, 0, 0, 1);
 }
-/*#homepageFirstImg
-{
-  height: 953px;
-}*/
 /**************************PROJECTS SECTION***********************/
 .projects
 {
   padding-top: 100px;
+  display: grid;
+  grid-template-columns: auto auto ;
+  grid-gap: 10px;
   padding: 10px;
   justify-content: space-around;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto;
 }
 .project
 {
@@ -149,7 +144,7 @@ nav ul
 .borderAnimation:nth-child(4n)
 {
   grid-column: 1/2;
-  grid-area: 2/1;
+  grid-row:2/3;
 }
 /*******************************PROJECT BORDER ANIMATION*******************************/
 .borderAnimation
@@ -303,11 +298,11 @@ nav ul
   z-index: 2;
   position: relative;
 }
-.forms
+.homeForm
 {
   margin-bottom: 35px;
 }
-.forms input
+.homeForm input
 {
   display: flex;
   flex-direction:column;
@@ -316,7 +311,7 @@ nav ul
   border:transparent;
   border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
-.forms textarea
+.homeForm textarea
 {
   display: flex;
   flex-direction: column;
@@ -326,7 +321,7 @@ nav ul
   border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
 
-.submitButton
+.homePageFormButton
 {
   margin-top: 50px;
   width: 700px;
@@ -335,12 +330,23 @@ nav ul
   border:1px solid rgba(0, 0, 0, 1);
   background-color: rgba(255, 255, 255, 1);
 }
-.submitButton:hover
+.homePageFormButton:hover
 {
   background-color: #d7b94b;
   border:1px rgba(0, 0, 0, 1) solid;
   color: rgba(0, 0, 0, 1);
 }
+/*.ifFormIsValid
+{
+  width: 700px;
+  height: 200px;
+  background-color: pink;
+  margin-left: 23%;
+  margin-bottom: 500px;
+  /*position: fixed;*/
+/*  display: block;
+}/*/
+
 /***************************FORM ANIMATION*******************************/
 
 .formLabel
@@ -350,8 +356,8 @@ nav ul
   transform: translateY(-50%);
     transition: all 0.3s ease-out;
 }
- .forms:focus-within .formLabel,
- .forms.activeInput .formLabel
+ .homeForm:focus-within .formLabel,
+ .homeForm.activeInput .formLabel
  {
   margin-top:-20px;
  }
@@ -372,35 +378,9 @@ nav ul
   right: 20px;
   bottom: 20px;
   cursor: pointer;
-  z-index: 7
 }
-/******************************ACCEPT COOKIE*******************************/
-.cookie-alert
-{
-  background-color: white;
-  position: fixed;
-  width: 100%;
-  text-align: center;
-  z-index: 6;
-}
-.cookie-alert p
-{
-  width: 500px;
-  margin-left: 350px;
-}
-.cookieBtn
-{
-  color: black;
-  border:solid 1px #d7b94b;
-  border-radius: 20px;
-  padding:10px  40px 10px 40px;
-}
-.cookieBtn:hover
-{
-  color: white;
-  background-color: #d7b94b;
-  text-decoration: none;
-}
+
+
 /**************************!!PROJECTS PAGE!!*******************************/
 
 .projectsBody
@@ -442,6 +422,7 @@ nav ul
 {
   margin-top: 100px;
   display: flex;
+  
 }
 .aboutPageText
 {
@@ -453,14 +434,12 @@ nav ul
 {
   padding-top:250px;
 }
-/**************************!!CIBLE PAGE!!*******************************/
-#containerAction
-{
-  margin-left: 500px;
-  padding-top: 300px;
-}
 
 /**************************MEDIA QUERYS*******************************/
+
+
+/****************************HOMEPAGE********************************/
+
 @media screen and (max-width: 600px)/*phones*/
 {
 /*************************LOYAOUT SECTION************************/
@@ -470,10 +449,9 @@ nav ul
   }
   body
   {
-    max-width: 600px;
+    max-width: 600px!important;
     text-align: center;
   }
-  /****************************HOMEPAGE********************************/
   .card-img-overlay
   {
     font-size: 0.8em;
@@ -482,7 +460,7 @@ nav ul
   }
   #homePage
   {
-    height: 667px!important;
+    height: 800px;
   }
   .btn_menu
   {
@@ -505,18 +483,13 @@ nav ul
     font-size: 1em;
     margin-left: 20px;
   }
-  .project h3
-  {
-    margin-left: -25px;
-  }
-  .borderAnimation
-  {
-    margin-left: 0px;
-    margin-top: -20px;
-  }
   .borderAnimation:nth-child(4n)
   {
-    grid-area: 4/1;
+    grid-row:4/6;
+  }
+  .containerProject
+  {
+    margin-top: -100px;
   }
   /*************************ABOUT SECTION************************/
   .aboutSection
@@ -532,20 +505,20 @@ nav ul
     margin-left: 10px;
   }
   /*************************FORM SECTION************************/
-  .forms
+  .homeForm
   {
     margin-left: -60px;
   }
-  .forms input
+  .homeForm input
   {
     width: 300px;
   }
-   .forms textarea
+   .homeForm textarea
   {
     width: 300px;
-    height: 200px;
+    height: 200px
   }
-  .submitButton
+  .homePageFormButton
   {
     width: 300px;
     margin-left: -75px;
@@ -555,172 +528,8 @@ nav ul
   {
     margin-left: -150px;
   }
-  /*************************COOKIE SECTION************************/
-
-  .cookie-alert p
-  {
-    width: 100%;
-    margin-left: 0px;
-  }
-
-  /*************************!PROJECT PAGE!************************/
-   .projectsText
-  {
-    margin-left:-100px;
-    padding-top: 80px;
-    background-color:white;
-    width:  475px;
-    font-size: 0.8em;
-  }
-  .projectsText p
-  {
-    text-align: center;
-    margin-left: 100px;
-  }
-  .projectsText h3
-  {
-    margin-left: 100px;
-  }
-  .projectsImg
-  {
-    margin-top: -280px;
-    width: 300px;
-    height: 200px;
-    margin-right: 100px;
-  }
-  /*************************!ABOUT PAGE!************************/
-  #aboutPage
-  {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-  .aboutPageText
-  {
-    margin-left: 0px;
-    height: 500px;
-    width: 370px;
-  }
-  /*************************!CONTACT PAGE!************************/
-  .contactForm
-  {
-    margin-left: 100px;
-  }
-  #containerAction h3
-  {
-    font-size: 1.2em;
-  }
-}
-
-
-@media screen and (max-width: 1024px)/*ipad*/
-{
-/*************************LOYAOUT SECTION************************/
-  html,body
-  {
-    overflow-x: hidden;
-  }
-  body
-  {
-    max-width: 1024px;
-    text-align: center;
-  }
-  .card-img-overlay
-  {
-    font-size: 0.8em;
-    margin-left: -300px;
-    width: 100%;
-  }
-  #homePage
-  {
-    height: 1100px;
-  }
   
-  /*************************ABOUT SECTION************************/
-  .aboutSection
-  {
-    font-size: 1em;
-  }
-  .aboutText
-  {
-    width: 350px;
-    margin-left: 10px;
-  }
-  /*************************FORM SECTION************************/
-  .forms
-  {
-    margin-left: 0px;
-  }
-  .forms input
-  {
-    width: 600px;
-  }
-   .forms textarea
-  {
-    width: 600px;
-    height: 200px
-  }
-  .submitButton
-  {
-    width: 600px;
-    margin-left: -75px;
-    margin-top: 0px;
-  }
-  .formLabel
-  {
-    margin-left: -330px;
-  }
-  /*************************!PROJECT PAGE!************************/
-   .projectsText
-  {
-    width: 300px;
-    font-size: 0.8em;
-    margin-left: 10px;
-  }
-  .projectsImg
-  {
-    width: 320px;
-  }
-
-  /*************************!CONTACT PAGE!************************/
-  .contactForm
-  {
-    margin-left: 100px;
-  }
-  /*************************!CIBLE PAGE!************************/
-  #containerAction
-  {
-    margin-left: 0px;
-  }
-   /*************************COOKIE SECTION************************/
-
-  .cookie-alert p
-  {
-    width: 100%;
-    margin-left: 0px;
-  }
+  /**************************!PROJECTS PAGE!*****************************/
+  
+  .card-img-top
 }
-@media (min-width: 1280px) and (max-height: 610px)/*laptop*/
-{
-/*************************LOYAOUT SECTION************************/
-  html,body
-  {
-    overflow-x: hidden;
-  }
-  #homepageFirstImg
-  {
-    height: 610px;
-  }
-    #aboutTitle
-  {
-    padding-top: 100px;
-  }
-  #aboutPage
-  {
-    margin-top: 100px;
-  }
-}
-  .submitButton
-  {
-    margin-top: 0px;
-  }
